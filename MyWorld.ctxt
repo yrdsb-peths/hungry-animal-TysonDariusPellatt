@@ -7,7 +7,6 @@ comment2.params=
 comment2.target=void\ spawnFruit()
 comment3.params=
 comment3.target=void\ increaseScore()
-comment3.text=\r\n\ \ \ \ public\ void\ spawnEnemy()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ int\ x\ \=\ Greenfoot.getRandomNumber(600);\r\n\ \ \ \ \ \ \ \ int\ y\ \=\ Greenfoot.getRandomNumber(150);\r\n\ \ \ \ \ \ \ \ Hazard\ e1\ \=\ new\ Hazard();\r\n\ \ \ \ \ \ \ \ Hazard\ e2\ \=\ new\ Hazard();\r\n\ \ \ \ \ \ \ \ Hazard\ e3\=\ new\ Hazard();\r\n\ \ \ \ \ \ \ \ addObject(e1,\ x,\ y);\r\n\ \ \ \ \ \ \ \ if(score\ >\=\ 20)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ addObject(e2,\ x,\ y);\r\n\ \ \ \ \ \ \ \ }\r\n}
 comment4.params=
 comment4.target=void\ gameOver()
 numComments=5

@@ -12,7 +12,7 @@ private String value;
     public int dodge = 0;
     public int score = 0;
     public Label ScoreLabel = new Label(0,60);
-    
+    public int level = 0;
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -22,33 +22,23 @@ private String value;
         addObject(P1,300,350);
         addObject(ScoreLabel,20,20);
         spawnFruit();
-        //spawnEnemy();
     }
     public void spawnFruit()
     {
+        apple or1 = new apple();
+        or1.setSpeed(level);
         int x = Greenfoot.getRandomNumber(600);
         int y = Greenfoot.getRandomNumber(150);
-        apple or1 = new apple();
         addObject(or1, x, y);
     }
-    /**
-    public void spawnEnemy()
-    {
-        int x = Greenfoot.getRandomNumber(600);
-        int y = Greenfoot.getRandomNumber(150);
-        Hazard e1 = new Hazard();
-        Hazard e2 = new Hazard();
-        Hazard e3= new Hazard();
-        addObject(e1, x, y);
-        if(score >= 20)
-        {
-            addObject(e2, x, y);
-        }
-    }*/
     public void increaseScore()
     {
         score++;
         ScoreLabel.setValue(score);
+        if(score % 5 == 0)
+        {
+            level += 1;
+        }
     }
     public void gameOver()
     {
