@@ -6,14 +6,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Title extends World
+public class TitleScreen extends World
 {
-    Label titleLable =new Label("Hungry Quest",75);
+    Label titleLable =new Label("Hungry Elephant",75);
     /**
      * Constructor for objects of class TitleScreen.
      * 
      */
-    public Title()
+    public TitleScreen()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
