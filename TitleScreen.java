@@ -45,5 +45,7 @@ public class TitleScreen extends World
         Label L2 = new Label("Press SPACE to Start",40);
         addObject(L2,400,300);
         L2.setLocation(272,284);
+        apple.setLocation(318,77);
+        removeObject(apple);
     }
 }
